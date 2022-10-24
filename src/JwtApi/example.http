@@ -1,0 +1,17 @@
+# Get Resource Token
+# @name get_token
+POST https://localhost:7149/initiate HTTP/1.1
+
+###
+
+@resource_token = {{get_token.response.body.$.token}}
+
+
+# Validate Resource Token
+
+POST https://localhost:7149/validate HTTP/1.1
+content-type: application/json
+
+{
+    "token": "{{resource_token}}"
+}

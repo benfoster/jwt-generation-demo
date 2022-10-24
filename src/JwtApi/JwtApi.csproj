@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Minid" Version="0.1.2" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.24.0" />
+  </ItemGroup>
+</Project>
